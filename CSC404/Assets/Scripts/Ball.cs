@@ -29,7 +29,7 @@ namespace DefaultNamespace
                 HitBall();
         }
 
-        private void HitBall()
+        public void HitBall()
         {
             // Revert the forward direction
             direction = !direction;

@@ -21,11 +21,13 @@ namespace DefaultNamespace {
             InputActionMap["AToLeft"].canceled += ctx => { AMovingLeft = false; };
             InputActionMap["AToRight"].performed += ctx => { AMovingRight = true; };
             InputActionMap["AToRight"].canceled += ctx => { AMovingRight = false; };
+            InputActionMap["ASwing"].performed += ctx => { Player1.Swing(); };
             
             InputActionMap["BToLeft"].performed += ctx => { BMovingLeft = true; };
             InputActionMap["BToLeft"].canceled += ctx => { BMovingLeft = false; };
             InputActionMap["BToRight"].performed += ctx => { BMovingRight = true; };
             InputActionMap["BToRight"].canceled += ctx => { BMovingRight = false; };
+            InputActionMap["BSwing"].performed += ctx => { Player2.Swing(); };
             
             InputActionMap.Enable();
         }
@@ -41,13 +43,13 @@ namespace DefaultNamespace {
         public void MovePlayerLeft(int player, float time) {
             Player targetPlayer = player == 1 ? Player1 : Player2;
             Vector3 p = targetPlayer.Transform.position;
-            targetPlayer.Transform.position = new Vector3(p.x - time * PlayermoveSpeed, p.y, p.z);
+            targetPlayer.Transform.position = new Vector3(p.x, p.y, p.z - time * PlayermoveSpeed);
         }
         
         public void MovePlayerRight(int player, float time) {
             Player targetPlayer = player == 1 ? Player1 : Player2;
             Vector3 p = targetPlayer.Transform.position;
-            targetPlayer.Transform.position = new Vector3(p.x + time * PlayermoveSpeed, p.y, p.z);
+            targetPlayer.Transform.position = new Vector3(p.x, p.y, p.z + time * PlayermoveSpeed);
         }
     }
 }
