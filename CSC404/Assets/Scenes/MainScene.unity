@@ -469,6 +469,79 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ea343805ea147198609973a5bd026c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InputActionMap:
+    m_Name: Input
+    m_Id: 96ef4fd9-90fa-42ab-be6c-0f3d8cf7c9d0
+    m_Asset: {fileID: 0}
+    m_Actions:
+    - m_Name: AToLeft
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: b960213c-3da5-4178-bb0b-087c454b52e1
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: AToRight
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 85464adf-7cd8-43d0-985a-1df1ffd7440c
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: BToLeft
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: a341ac47-1887-45ce-b6e4-1101b5defcc3
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: BToRight
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 52a4bc54-1efc-4e8c-86db-5b8d390d03a0
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name: 
+      m_Id: a8de8ccf-3957-4ac5-b23f-b9e169be50f3
+      m_Path: <Keyboard>/#(A)
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: AToLeft
+      m_Flags: 0
+    - m_Name: 
+      m_Id: e353e1c2-924d-4bed-88af-8b305b6d1347
+      m_Path: <Keyboard>/#(D)
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: AToRight
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 14727325-738f-4d52-93aa-3fba31c091dc
+      m_Path: <Keyboard>/leftArrow
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: BToLeft
+      m_Flags: 0
+    - m_Name: 
+      m_Id: dbb0bd8b-4353-4cbe-b613-a0c34d812f37
+      m_Path: <Keyboard>/rightArrow
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: BToRight
+      m_Flags: 0
+  Player1: {fileID: 0}
+  Player2: {fileID: 0}
+  PlayermoveSpeed: 10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
